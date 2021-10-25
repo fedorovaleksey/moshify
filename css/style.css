@@ -292,7 +292,7 @@ a{
   }
   
   .list--tick {
-    list-style-image: url(../images/tick.svg);
+    list-style-image: url(/css/images/tick.svg);
     padding-left: 3rem;
     color: var(--color-headings);
   }
@@ -386,12 +386,12 @@ a{
 }
 
 .plan--popular .card__header::before{
-    content: url('/images/popular.svg');
+    content: url('/css/images/popular.svg');
     width: 40px;
     display: inline-block;
     position: absolute;
     top: -6px;
-    right: 5%;
+    right: 2%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -789,4 +789,37 @@ align-items: center;
 
     }
     
+}
+
+/* Plans Block */
+.plans{
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.plans__container{
+    max-width: 1140px;
+    margin: 0 auto;
+    
+}
+
+.plans__container.grid--1x3{
+    align-items: stretch;
+    column-gap: 4rem;
+}
+
+.plans .card{
+    height: 100%;
+}
+
+.plans__container .card{
+    /* margin: 3rem; */
+    transition: all 0.2s ease-in;
+    
+}
+
+.plans .card:hover {
+    /* margin-top: 1rem; */
+transform: scale(1.1);
+box-shadow: 0px 0px 44px 0px rgba(0,0,0,0.75);
 }
